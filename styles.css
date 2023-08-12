@@ -1,0 +1,278 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Basic styling */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 100px 0;
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    color: white;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .menu-item {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .menu-item img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+  }
+  /* Modify this in your styles.css */
+.section {
+    padding: 100px 0; /* Increase the padding for more separation */
+    text-align: center;
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.close {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.close:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+#popupMessage {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Menu section styling */
+#menu {
+  background-color: #f8f8f8;
+  padding: 60px 0;
+}
+
+#menu h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-item {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item img {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.menu-item-details {
+  padding: 20px;
+}
+
+.menu-item h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.menu-item p {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.5;
+}
+
+.coming-soon {
+  font-size: 18px;
+  text-align: center;
+  color: #999;
+  margin-top: 40px;
+}
+
+.menu-message {
+  font-size: 18px;
+  text-align: center;
+  color: #888;
+  margin-top: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-item {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+#about {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    padding: 0 20px;
+  }
+}
+
+#contact {
+  background-color: #f8f8f8;
+  padding: 80px 0;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-description {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.contact-email {
+  display: inline-block;
+  font-size: 20px;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: color 0.3s ease;
+}
+
+.contact-email:hover {
+  color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    padding: 0 20px;
+  }
+}
